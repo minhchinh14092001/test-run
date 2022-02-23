@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import logo from './image/logo.png'
+import hat from './image/headerImg.jpeg'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className='firsthalf'>
+      <div className="logo ">
+        <img src={logo} alt=""/>
+      </div>
+      <div className="grid1">
+        <div>
+          <p className="paragraphText" style={{color: "orange"}}>Great Experience In Construction</p>
+          <p className="bigTitle">The Best Construction Company</p>
+          <p className='paragrapghText'>At construction we strive to excel in every service we provide, adding value for our customers wherever possible, and thereby attaining national leadership in the construction industry.</p>
+        <div className="button">
+          <button className='button'>GET STARTED</button>
+          <button className='button' style={{backgroundColor: "orange"}}>READ MORE</button>
+        </div>
+        </div>
+        <div>
+          <img src={hat} alt=""/>
+        </div>
+      </div>
+      </div>
     </div>
   );
 }
